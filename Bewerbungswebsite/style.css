@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    --background: 
+    --interface: 
+    --color: 
+    --hover: 
+    
+  }
+
+  #maincontainer {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "Topic1 Topic2 Topic3";
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 10px;
+  }
+
+  #header {
+    grid-area: header;
+
+    font-size: 500%;
+  }
+
+  
+  #topic1 {
+    grid-area: Topic1;
+
+    font-size: 300%;
+  }
+
+  #topic2 {
+    grid-area: Topic2;
+
+    font-size: 300%;
+  }
+
+  #topic3 {
+    grid-area: Topic3;
+
+    font-size: 300%;
+  }
