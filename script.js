@@ -1,3 +1,5 @@
+
+
 var i = 0;
 var speed = 50;
 var headerName = document.getElementById("name");
@@ -32,6 +34,9 @@ function typePhrase() {
 
 
 window.onload = function() {
+
+  setTimeout(function() {
     typeName(typePhrase); 
+  }, 500);
     
   };
