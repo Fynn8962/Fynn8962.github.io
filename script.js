@@ -58,3 +58,13 @@ window.onload = function() {
     document.documentElement.scrollTop = 0;
   }
   
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+
+    const button = document.getElementById('darkModeButton');
+    if (document.body.classList.contains('dark-mode')) {
+      button.textContent = 'Light Mode';
+    } else {
+      button.textContent = 'Dark Mode';
+    }
+  }

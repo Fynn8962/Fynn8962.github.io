@@ -2,15 +2,30 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
+  }
+
+  :root {
     --background-color: #F3EFE6; /*main color: #D3C1A2*/
     --color: #252422;
     --box-color: #F8F6F1;
     --accent-color: #756B5A;
     --accent-color-hover: rgba(117, 107, 90, 0.749);
     --accent-color-gray-hover: #C9C9C9;
-    --accent-color-gray: rgba(201, 201, 201, 0.260)
+    --accent-color-gray: rgba(201, 201, 201, 0.260);
+    --image-background: #F3EFE6;
+  }
 
-    
+
+  body.dark-mode {
+    --background-color: #1E1C1A; 
+    --color: #EDE6DA; 
+    --box-color: #2C2A28; 
+    --accent-color: #A38D6D; 
+    --accent-color-hover: rgba(163, 141, 109, 0.75); 
+    --accent-color-gray-hover: #5A5754; 
+    --accent-color-gray: rgba(90, 87, 84, 0.26); 
+    --image-background: #F3EFE6;
   }
 
   html {
@@ -85,10 +100,29 @@
   font-size: 150%;
   justify-content: center;
   padding: 20px;
-  background-color: #F8F6F1;
+  background-color: var(--background-color);
   min-height: 100vh;
 
 }
+
+#darkModeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--accent-color);
+  color: var(--color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeButton:hover {
+    background-color: var(--accent-color-hover);
+}
+
 
 #buttonTop {
   display: none;
@@ -146,13 +180,14 @@
   justify-content: center;
   gap: 20px;
   padding-bottom: 6vh;
+
 }
 
 .social-link img {
   width: 32px;
   height: 32px;
   transition: transform 0.2s ease;
-  
+  background-color: var(--image-background);
 }
 
 
@@ -217,7 +252,7 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: var(--box-color);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -249,7 +284,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  background-color: white;
+  background-color: var(--box-color);
 }
 
 .project-button {
@@ -289,6 +324,15 @@
     font-size: 170%;
   }
 
+  #darkModeButton {
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  padding: 8px 12px;
+  z-index: 1000;
+}
+
+
   .about-me {
     max-width: 90%;
     margin: 40px auto;
@@ -298,6 +342,11 @@
   .about-me h1 {
     font-size: 180%;
   }
+
+  .about-me p {
+  font-size: 0.9em;
+
+}
 
   #Topic2 h1 {
    font-size: 180%;
