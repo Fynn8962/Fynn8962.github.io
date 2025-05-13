@@ -91,11 +91,6 @@
   
 }
 
-.topic:hover {
-  background-color: var(--accent-color-hover);
-  transform: scale(1.2);
-}
-
 .topic-section {
   font-size: 150%;
   justify-content: center;
@@ -119,9 +114,6 @@
   transition: background-color 0.3s ease;
 }
 
-#darkModeButton:hover {
-    background-color: var(--accent-color-hover);
-}
 
 
 #buttonTop {
@@ -134,21 +126,16 @@
   cursor: pointer;
   border: none;
   color: var(--color);
+  font-weight: bold;
   background: var(--accent-color-gray);
   border: none;
   border-radius: 7px;
   padding: 13px;
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.3s;
   text-decoration: none;
 
 }
-
-#buttonTop:hover {
-  background: var(--accent-color-gray-hover);
-  
-}
-
 
 /*About Me*/
 
@@ -228,10 +215,6 @@
     
 }
 
-.download-btn:hover {
-  background-color: var(--accent-color-gray-hover);
-}
-
 /* Projects */
 #Topic3 h1 {
   text-align: center;
@@ -265,9 +248,7 @@
   margin-bottom: 15px;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
-}
+
 
 .project-title {
   font-size: 130%;
@@ -297,9 +278,7 @@
   transition: background-color 0.2s ease;
 }
 
-.project-button:hover {
-  background-color: var(--accent-color-gray-hover);
-}
+
 
 
 @media (max-width: 768px) {
@@ -390,3 +369,33 @@
   }
 }
 
+@media (hover: hover) {
+  .topic:hover {
+    background-color: var(--accent-color-hover);
+    transform: scale(1.2);
+  }
+
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+
+  .download-btn:hover {
+    background-color: var(--accent-color-gray-hover);
+  }
+
+  #buttonTop:hover {
+    background: var(--accent-color-gray-hover);
+  }
+
+  #darkModeButton:hover {
+    background-color: var(--accent-color-hover);
+  }
+
+  .social-link img:hover {
+    transform: scale(1.1);
+  }
+
+  .project-button:hover {
+    background-color: var(--accent-color-gray-hover);
+  }
+}
